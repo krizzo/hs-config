@@ -163,7 +163,7 @@ function obj:start()
     hs.grid.setGrid(self.grid.columns .. "x" .. self.grid.rows)
     hs.grid.setMargins(self.grid.margins .. "x" ..self.grid.margins)
     hs.window.animationDuration = 0
-    
+
     if self.replaceFullscreenWithMaximize then
         self:bindFullScreenMaximize()
     end
@@ -173,7 +173,7 @@ function obj:stop()
     if self.replaceFullscreenWithMaximize then
         self:unbindFullscreenMaximize()
     end
-    
+
 end
 
 return obj
